@@ -6,6 +6,12 @@ local keybinds = require("keybinds")
 config.keys = keybinds.keys
 config.key_tables = keybinds.key_tables
 
+config.font = wezterm.font_with_fallback({
+	"HackGen Console",
+	"Noto Sans Mono CJK JP",
+	"Hiragino Sans",
+	"Apple Color Emoji",
+})
 -- 2. リーダーキーの設定
 config.leader = { key = "b", mods = "CTRL", timeout_milliseconds = 1000 }
 
